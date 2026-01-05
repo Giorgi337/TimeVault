@@ -134,17 +134,10 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
 
           </div>
         </section>
-        {t('home.ecosystem.desc')}
-      </p>
-    </div >
-                </motion.div >
-                
-            </div >
-        </section >
 
-  <TemplateShowcase />
+        <TemplateShowcase />
       </main >
-  <Footer />
+      <Footer />
     </>
   );
 };
