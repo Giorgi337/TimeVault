@@ -65,7 +65,7 @@ export const TemplateShowcase: React.FC = () => {
     };
 
     return (
-        <section id="why-ai" className="py-12 md:py-16 bg-slate-50 scroll-mt-24 flex items-center justify-center relative">
+        <section id="why-ai" className="min-h-screen bg-slate-50 scroll-mt-0 flex items-center justify-center relative py-10">
             {/* Background Decorations */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-30">
                 <div className="absolute top-[10%] left-[5%] w-96 h-96 bg-blue-200 blur-[100px] rounded-full mix-blend-multiply"></div>
@@ -74,10 +74,10 @@ export const TemplateShowcase: React.FC = () => {
 
             <div className="max-w-6xl mx-auto px-4 w-full relative z-10">
                 <AnimatePresence mode="wait">
-                    
+
                     {/* STATE: INTRO */}
                     {status === 'intro' && (
-                        <motion.div 
+                        <motion.div
                             key="intro"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -88,13 +88,13 @@ export const TemplateShowcase: React.FC = () => {
                                 {t('showcase.tag')}
                             </span>
                             <h2 className={`${isGeorgian ? 'text-2xl md:text-3xl lg:text-4xl' : 'text-5xl md:text-7xl'} font-black text-slate-900 mb-8 tracking-tight ${isGeorgian ? 'leading-[1.6]' : 'leading-tight'}`}>
-                                {t('showcase.titleLine1')} <br /> 
+                                {t('showcase.titleLine1')} <br />
                                 <span className="text-blue-600">{t('showcase.titleLine2')}</span>
                             </h2>
                             <p className="text-xl text-slate-600 mb-12 leading-relaxed">
                                 {t('showcase.desc')}
                             </p>
-                            <button 
+                            <button
                                 onClick={() => setStatus('playing')}
                                 className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-white transition-all duration-200 bg-slate-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 hover:bg-slate-800 text-xl"
                             >
@@ -125,7 +125,7 @@ export const TemplateShowcase: React.FC = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 {questions[currentQIndex].images.map((img, idx) => (
-                                    <motion.div 
+                                    <motion.div
                                         key={`${currentQIndex}-${idx}`}
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ export const TemplateShowcase: React.FC = () => {
                                         `}
                                     >
                                         <img src={img} alt="Quiz Option" className="w-full h-full object-cover" />
-                                        
+
                                         {/* Hover Overlay */}
                                         <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors flex items-center justify-center">
                                             <div className="bg-white/90 backdrop-blur text-slate-900 px-6 py-3 rounded-full font-bold opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
@@ -162,12 +162,12 @@ export const TemplateShowcase: React.FC = () => {
                             <div className="relative">
                                 {/* Background Glow */}
                                 <div className="absolute -inset-1 bg-gradient-to-tr from-blue-600 to-yellow-400 rounded-[2.5rem] opacity-20 blur-xl"></div>
-                                
+
                                 <div className="bg-white p-6 md:p-8 rounded-[2rem] shadow-2xl relative border border-slate-100 overflow-hidden text-center">
-                                     {/* Subtle inner texture */}
-                                     <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-yellow-500 to-blue-500"></div>
-                                     
-                                     <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-xs font-bold uppercase tracking-widest">
+                                    {/* Subtle inner texture */}
+                                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-yellow-500 to-blue-500"></div>
+
+                                    <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-xs font-bold uppercase tracking-widest">
                                         <AlertCircle size={14} />
                                         {t('showcase.results.tag')}
                                     </div>
@@ -195,12 +195,12 @@ export const TemplateShowcase: React.FC = () => {
                             {/* Right Side: Copy */}
                             <div className="space-y-6 relative">
                                 <h2 className={`${isGeorgian ? 'text-3xl md:text-4xl' : 'text-4xl md:text-5xl'} font-black text-slate-900 ${isGeorgian ? 'leading-[1.6]' : 'leading-[1.1]'}`}>
-                                    {t('showcase.results.rightSideTitle1')} <br/>
+                                    {t('showcase.results.rightSideTitle1')} <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-yellow-500">
                                         {t('showcase.results.rightSideTitle2')}
                                     </span>
                                 </h2>
-                                
+
                                 <div className="space-y-4 text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
                                     <p>
                                         {t('showcase.results.rightSideP1')}
@@ -211,8 +211,8 @@ export const TemplateShowcase: React.FC = () => {
                                 </div>
 
                                 <div className="pt-4">
-                                    <BeamButton 
-                                        variant="premium" 
+                                    <BeamButton
+                                        variant="premium"
                                         className="px-8 py-4 text-lg w-full md:w-auto justify-center"
                                         onClick={handleRestart}
                                     >

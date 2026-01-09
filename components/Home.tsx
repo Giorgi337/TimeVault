@@ -79,11 +79,10 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
         <Hero />
         <ToolsSwitcher onNavigate={onNavigate} />
 
-        {/* Collaborative Ecosystem Section */}
         {/* Changed border-y to border-b to remove the line between this section and the previous white section */}
-        <section id="methodology" className="py-16 lg:py-20 bg-slate-900 overflow-hidden relative border-b border-slate-800 scroll-mt-24">
+        <section id="methodology" className="min-h-screen flex items-center bg-slate-900 overflow-hidden relative scroll-mt-0">
           <div className="absolute inset-0 bg-blue-600/5 mix-blend-overlay pointer-events-none"></div>
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
             {/* Image/Rocket Section on Left */}
             <motion.div
@@ -95,18 +94,14 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             >
               <TiltCard>
                 <div className="bg-gradient-to-br from-blue-600 to-indigo-900 p-1 rounded-[40px] shadow-[0_0_100px_rgba(37,99,235,0.2)] [transform-style:preserve-3d]">
-                  <div className="bg-slate-950 rounded-[39px] p-6 lg:p-10 overflow-hidden aspect-square flex items-center justify-center relative [transform-style:preserve-3d]">
-                    <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/vault/800')] bg-cover opacity-20 grayscale group-hover:grayscale-0 transition-all duration-1000"></div>
-                    <div className="relative z-10 text-center" style={{ transform: "translateZ(60px)" }}>
-                      <motion.div
-                        animate={{ y: [0, -20, 0] }}
-                        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                        className="text-7xl lg:text-8xl mb-6 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
-                      >
-                        🚀
-                      </motion.div>
-                      <div className="text-2xl lg:text-3xl font-black text-white tracking-tighter drop-shadow-xl">{t('home.rocket.ready')}</div>
-                    </div>
+                  <div className="bg-slate-950 rounded-[39px] overflow-hidden aspect-square flex items-center justify-center relative [transform-style:preserve-3d]">
+                    <div className="absolute inset-0 bg-slate-950"></div>
+                    <img
+                      src="/methodology-visual.png"
+                      alt="Methodology Presentation"
+                      className="w-full h-full object-cover relative z-10"
+                      style={{ transform: "translateZ(40px)" }}
+                    />
                   </div>
                 </div>
               </TiltCard>
@@ -119,7 +114,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               viewport={{ once: true }}
               className="space-y-8 order-1 lg:order-2"
             >
-              <h2 className={`${isGeorgian ? 'text-xl md:text-2xl lg:text-3xl leading-[1.6]' : 'text-4xl md:text-5xl lg:text-6xl leading-tight'} font-black text-white tracking-tight`}>
+              <h2 className={`${isGeorgian ? 'text-2xl md:text-4xl lg:text-5xl leading-[1.6]' : 'text-4xl md:text-6xl lg:text-7xl leading-none'} font-black text-white tracking-tight`}>
                 {t('home.ecosystem.titleLine1')} <br />
                 <span className="text-blue-500">{t('home.ecosystem.titleLine2')}</span>
               </h2>

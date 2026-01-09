@@ -4,10 +4,9 @@ import { Globe, Cpu, Megaphone, Palette, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const images = {
-  web: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2664",
-  auto: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=2000",
-  content: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426",
-  creative: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=2000"
+  web: "/web-development.png",
+  auto: "/automation-dashboard.jpg",
+  content: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
 };
 
 interface ToolsSwitcherProps {
@@ -22,14 +21,13 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
   const categories = [
     { id: 'web', label: t('tools.buttons.web'), icon: Globe },
     { id: 'content', label: t('tools.buttons.content'), icon: Megaphone },
-    { id: 'auto', label: t('tools.buttons.auto'), icon: Cpu },
-    { id: 'creative', label: t('tools.buttons.creative'), icon: Palette }
+    { id: 'auto', label: t('tools.buttons.auto'), icon: Cpu }
   ];
 
   return (
-    <section id="services" className="pt-16 pb-8 lg:pt-20 lg:pb-10 bg-white text-slate-900 scroll-mt-20">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className={`${isGeorgian ? 'text-2xl md:text-3xl' : 'text-3xl md:text-4xl'} font-black mb-4 tracking-tight ${isGeorgian ? 'leading-[1.6]' : 'leading-tight'}`}>
+    <section id="services" className="min-h-screen pt-12 pb-4 lg:pt-16 lg:pb-4 flex flex-col justify-center bg-white text-slate-900 scroll-mt-0">
+      <div className="max-w-7xl mx-auto px-6 text-center w-full flex-1 flex flex-col justify-center">
+        <h2 className={`${isGeorgian ? 'text-3xl md:text-4xl lg:text-5xl' : 'text-3xl md:text-4xl lg:text-5xl'} font-black mb-6 tracking-tight ${isGeorgian ? 'leading-[1.4]' : 'leading-tight'}`}>
           {t('tools.headline')} <span className="text-blue-600">{t('tools.headlineHighlight')}</span>
         </h2>
 
@@ -41,8 +39,8 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
               onClick={() => setActiveTab(cat.id)}
               className={`
                 flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-full font-bold transition-all duration-300 text-sm
-                ${activeTab === cat.id 
-                  ? 'bg-blue-600 text-white shadow-lg scale-105' 
+                ${activeTab === cat.id
+                  ? 'bg-blue-600 text-white shadow-lg scale-105'
                   : 'text-slate-500 hover:text-slate-800 hover:bg-slate-200'}
               `}
             >
@@ -53,7 +51,7 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
         </div>
 
         {/* Content Area */}
-        <div className="relative min-h-[450px]">
+        <div className="relative min-h-[450px] flex items-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -69,17 +67,17 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 font-bold rounded-full text-xs uppercase tracking-widest mb-3">
                     {t('tools.featured')}
                   </span>
-                  <h3 className={`${isGeorgian ? 'text-xl md:text-2xl lg:text-3xl' : 'text-3xl md:text-4xl lg:text-5xl'} font-black text-slate-900 tracking-tight leading-tight`}>
+                  <h3 className={`${isGeorgian ? 'text-lg md:text-xl lg:text-2xl' : 'text-2xl md:text-3xl lg:text-4xl'} font-black text-slate-900 tracking-tight leading-tight`}>
                     {t(`tools.content.${activeTab}.title`)}
                   </h3>
                 </div>
-                
-                <p className="text-base md:text-lg text-slate-600 leading-relaxed font-medium max-w-xl">
+
+                <p className="text-sm md:text-base text-slate-600 leading-relaxed font-medium max-w-xl">
                   {t(`tools.content.${activeTab}.description`)}
                 </p>
-                
+
                 <div className="pt-2">
-                  <button 
+                  <button
                     onClick={() => onNavigate && onNavigate('service', activeTab)}
                     className="px-6 py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 flex items-center gap-2 group text-base shadow-xl hover:shadow-blue-900/20 hover:-translate-y-1"
                   >
@@ -93,11 +91,11 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
                   </button>
                 </div>
               </div>
-              
+
               {/* Image Side */}
               <div className="relative group overflow-hidden rounded-[2rem] shadow-2xl border-4 border-slate-100 aspect-video lg:aspect-[4/3] max-h-[500px] w-full order-1 lg:order-2">
-                <motion.img 
-                  src={images[activeTab as keyof typeof images]} 
+                <motion.img
+                  src={images[activeTab as keyof typeof images]}
                   alt={activeTab}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
@@ -107,6 +105,6 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
           </AnimatePresence>
         </div>
       </div>
-    </section>
+    </section >
   );
 };

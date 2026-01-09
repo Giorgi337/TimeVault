@@ -38,8 +38,7 @@ const translations: Record<Language, Translations> = {
       buttons: {
         web: 'Web Architecture',
         content: 'AI Marketing',
-        auto: 'Business Automation',
-        creative: 'Lead Generation'
+        auto: 'Business Automation'
       },
       featured: 'Featured Service',
       exploreBtn: 'Explore',
@@ -55,10 +54,6 @@ const translations: Record<Language, Translations> = {
         content: {
           title: "Infinite Creativity, Zero Burnout",
           description: "Maintain a dominant presence. We generate high-quality blogs, social posts, and ad copy at scale."
-        },
-        creative: {
-            title: "A Pipeline That Never Sleeps",
-            description: "Stop chasing clients. We deploy systems that identify, qualify, and engage your ideal customers automatically."
         }
       }
     },
@@ -170,25 +165,6 @@ const translations: Record<Language, Translations> = {
             { title: "Auto-Invoicing", desc: "Trigger invoices and follow-ups based on project milestones." },
             { title: "Smart Notifications", desc: "Get alerted only when human judgment is actually required." }
           ]
-        },
-        creative: {
-          title: "Lead Generation",
-          subtitle: "A Pipeline That Never Sleeps",
-          description: [
-            "Stop waiting for referrals. We build outbound infrastructures that identify your perfect customers, find their verified contact info, and initiate conversations at scale.",
-            "This isn't spam; it's hyper-personalized outreach. By analyzing prospect data before the first email is sent, we craft messages that resonate with their specific pain points, resulting in meeting bookings while you sleep."
-          ],
-          benefits: [
-            "Automated Prospecting Lists",
-            "Domain Reputation Warming",
-            "AI-Written Personalization",
-            "Meeting Calendar Integration"
-          ],
-          features: [
-            { title: "Multi-Inbox Sending", desc: "Scale volume safely by distributing volume across 10+ domains." },
-            { title: "Intent Signal Tracking", desc: "Reach out to companies the moment they start hiring for roles you replace." },
-            { title: "LinkedIn Automation", desc: "Visit profiles and endorse skills to warm up leads before connecting." }
-          ]
         }
       }
     }
@@ -220,12 +196,11 @@ const translations: Record<Language, Translations> = {
     },
     tools: {
       headline: 'ციფრული პროცესების',
-      headlineHighlight: 'სრული აქსელერაცია',
+      headlineHighlight: 'აქსელერაცია',
       buttons: {
         web: 'ვებ არქიტექტურა',
         content: 'AI მარკეტინგი',
-        auto: 'ბიზნეს ავტომატიზაცია',
-        creative: 'ლიდების გენერაცია'
+        auto: 'ბიზნეს ავტომატიზაცია'
       },
       featured: 'რჩეული სერვისი',
       exploreBtn: 'აღმოაჩინე',
@@ -241,10 +216,6 @@ const translations: Record<Language, Translations> = {
         content: {
           title: "უსაზღვრო კრეატიულობა, გადაწვის გარეშე",
           description: "შეინარჩუნეთ დომინანტური პოზიცია. ჩვენ მასშტაბურად ვქმნით მაღალი ხარისხის ბლოგებს, პოსტებს სოციალური ქსელებისთვის და სარეკლამო ტექსტებს."
-        },
-        creative: {
-            title: "გაყიდვების მილსადენი, რომელსაც არასდროს სძინავს",
-            description: "შეწყვიტეთ კლიენტების დევნა. ჩვენ ვქმნით სისტემებს, რომლებიც ავტომატურად პოულობენ, ამოწმებენ და უკავშირდებიან თქვენს იდეალურ მომხმარებლებს."
         }
       }
     },
@@ -355,25 +326,6 @@ const translations: Record<Language, Translations> = {
             { title: "CRM სინქრონიზაცია", desc: "HubSpot, Salesforce და თქვენი იმეილის სრულ ჰარმონიაში მუშაობა." },
             { title: "ავტო-ინვოისინგი", desc: "ინვოისებისა და შეხსენებების გაგზავნა პროექტის ეტაპების მიხედვით." },
             { title: "ჭკვიანი შეტყობინებები", desc: "მიიღეთ შეტყობინება მხოლოდ მაშინ, როცა ადამიანური განსჯა ნამდვილად საჭიროა." }
-          ]
-        },
-        creative: {
-          title: "ლიდების გენერაცია",
-          subtitle: "მილსადენი, რომელსაც არასდროს სძინავს",
-          description: [
-            "შეწყვიტეთ რეკომენდაციების ლოდინი. ჩვენ ვქმნით სისტემებს, რომლებიც პოულობენ თქვენს იდეალურ მომხმარებლებს, მათ დადასტურებულ საკონტაქტო ინფორმაციას და იწყებენ კომუნიკაციას მასშტაბურად.",
-            "ეს არ არის სპამი; ეს არის ჰიპერ-პერსონალიზებული კომუნიკაცია. პოტენციური კლიენტის მონაცემების გაანალიზებით, ჩვენ ვქმნით შეტყობინებებს, რომლებიც პასუხობს მათ კონკრეტულ პრობლემებს, რაც ითარგმნება დაჯავშნილ შეხვედრებში."
-          ],
-          benefits: [
-            "პოტენციური კლიენტების ავტომატური სიები",
-            "დომენის რეპუტაციის გათბობა",
-            "AI-ით დაწერილი პერსონალიზაცია",
-            "შეხვედრების კალენდრის ინტეგრაცია"
-          ],
-          features: [
-            { title: "Multi-Inbox გაგზავნა", desc: "მასშტაბის უსაფრთხო ზრდა მოცულობის 10+ დომენზე გადანაწილებით." },
-            { title: "განზრახვის სიგნალების ძიება", desc: "დაუკავშირდით კომპანიებს იმ მომენტში, როდესაც ისინი იწყებენ კადრების ძიებას." },
-            { title: "LinkedIn ავტომატიზაცია", desc: "პროფილების მონახულება და უნარების დადასტურება კავშირის დამყარებამდე." }
           ]
         }
       }
