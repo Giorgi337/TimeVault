@@ -123,11 +123,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 {t('home.methodology.badge')}
               </div>
               <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
-                {isGeorgian ? (
-                  <>ინოვაცია <span className="text-blue-500">რისკის გარეშე</span></>
-                ) : (
-                  <>{t('home.methodology.title')} <span className="text-blue-500">{t('home.methodology.titleHighlight')}</span></>
-                )}
+                {t('home.methodology.title')} <span className="text-blue-500">{t('home.methodology.titleHighlight')}</span>
               </h2>
               <div className="space-y-6">
                 <p className="text-xl text-slate-400 font-medium">

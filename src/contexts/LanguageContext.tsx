@@ -61,11 +61,12 @@ const translations: Record<Language, Translations> = {
       rocket: {
         ready: "READY FOR TAKEOFF"
       },
-      ecosystem: {
-        titleLine1: "Innovation",
-        titleLine2: "Without Risk",
+      methodology: {
+        badge: "METHODOLOGY",
+        title: "Innovation",
+        titleHighlight: "Without Risk",
         subtitle: "Save your time in the safe space.",
-        desc: "Technology is moving fast. Businesses that ignore these tools are becoming obsolete. TimeVault acts as your secure bridge to the future—providing the safety of a managed service with the explosive power of modern AI."
+        description: "Technology is moving fast. Businesses that ignore these tools are becoming obsolete. TimeVault acts as your secure bridge to the future—providing the safety of a managed service with the explosive power of modern AI."
       }
     },
     showcase: {
@@ -223,11 +224,12 @@ const translations: Record<Language, Translations> = {
       rocket: {
         ready: "მზად ვართ აფრენისთვის"
       },
-      ecosystem: {
-        titleLine1: "ინოვაცია",
-        titleLine2: "რისკის გარეშე",
+      methodology: {
+        badge: "მეთოდოლოგია",
+        title: "ინოვაცია",
+        titleHighlight: "რისკის გარეშე",
         subtitle: "დაზოგეთ დრო უსაფრთხო სივრცეში.",
-        desc: "ტექნოლოგიები სწრაფად ვითარდება. ბიზნესები, რომლებიც ამ ინსტრუმენტებს უგულებელყოფენ, მოძველდებიან. TimeVault არის თქვენი უსაფრთხო ხიდი მომავლისკენ — ჩვენ გთავაზობთ მართვადი სერვისის უსაფრთხოებას თანამედროვე AI-ის ასაფეთქებელ ძალასთან ერთად."
+        description: "ტექნოლოგიები სწრაფად ვითარდება. ბიზნესები, რომლებიც ამ ინსტრუმენტებს უგულებელყოფენ, მოძველდებიან. TimeVault არის თქვენი უსაფრთხო ხიდი მომავლისკენ — ჩვენ გთავაზობთ მართვადი სერვისის უსაფრთხოებას თანამედროვე AI-ის ასაფეთქებელ ძალასთან ერთად."
       }
     },
     showcase: {
