@@ -115,18 +115,11 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               viewport={{ once: true }}
               className="order-1 lg:order-2"
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                </span>
-                {t('home.methodology.badge')}
-              </div>
               <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
                 {t('home.methodology.title')} <span className="text-blue-500">{t('home.methodology.titleHighlight')}</span>
               </h2>
               <div className="space-y-6">
-                <p className="text-xl text-slate-400 font-medium">
+                <p className="text-xl text-white font-medium">
                   {t('home.methodology.subtitle')}
                 </p>
                 <p className="text-lg text-slate-500 leading-relaxed">
