@@ -12,9 +12,12 @@ interface ServicePageProps {
     onNavigate: (page: string, id?: string) => void;
 }
 
+import webImg from '../assets/web-development.png';
+import autoImg from '../assets/automation-dashboard.jpg';
+
 const images: Record<string, string> = {
-    web: "/web-development.png",
-    auto: "/automation-dashboard.jpg",
+    web: webImg,
+    auto: autoImg,
     content: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
 };
 

@@ -10,8 +10,10 @@ import React from 'react';
  * 2. Update the CUSTOM_LOGO_SRC constant below with the path (e.g., "/my-logo.png").
  * 3. Toggle SHOW_BRAND_NAME to false if your logo includes the text.
  */
-const CUSTOM_LOGO_SRC: string | null = "/logo.jpg"; // e.g., "https://example.com/logo.png"
-const SHOW_BRAND_NAME = true; // Set to false to hide "TimeVault" text
+import logoImg from '../assets/logo.jpg';
+
+const CUSTOM_LOGO_SRC = logoImg;
+const SHOW_BRAND_NAME = true;
 
 export const Logo: React.FC<{ className?: string }> = ({ className = "w-10 h-10" }) => {
 

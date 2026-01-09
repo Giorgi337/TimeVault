@@ -3,9 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, Cpu, Megaphone, Palette, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
+import webImg from '../assets/web-development.png';
+import autoImg from '../assets/automation-dashboard.jpg';
+
 const images = {
-  web: "/web-development.png",
-  auto: "/automation-dashboard.jpg",
+  web: webImg,
+  auto: autoImg,
   content: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
 };
 

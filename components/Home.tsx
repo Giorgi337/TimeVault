@@ -1,3 +1,4 @@
+import methodologyImg from '../assets/methodology-visual.png';
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Hero } from './Hero';
@@ -97,7 +98,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                   <div className="bg-slate-950 rounded-[39px] overflow-hidden aspect-square flex items-center justify-center relative [transform-style:preserve-3d]">
                     <div className="absolute inset-0 bg-slate-950"></div>
                     <img
-                      src="/methodology-visual.png"
+                      src={methodologyImg}
                       alt="Methodology Presentation"
                       className="w-full h-full object-cover relative z-10"
                       style={{ transform: "translateZ(40px)" }}
@@ -109,30 +110,40 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
 
             {/* Text Content Section on Right */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-8 order-1 lg:order-2"
+              className="order-1 lg:order-2"
             >
-              <h2 className={`${isGeorgian ? 'text-2xl md:text-4xl lg:text-5xl leading-[1.6]' : 'text-4xl md:text-6xl lg:text-7xl leading-none'} font-black text-white tracking-tight`}>
-                {t('home.ecosystem.titleLine1')} <br />
-                <span className="text-blue-500">{t('home.ecosystem.titleLine2')}</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                {t('home.methodology.badge')}
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
+                {isGeorgian ? (
+                  <>ინოვაცია <span className="text-blue-500">რისკის გარეშე</span></>
+                ) : (
+                  <>{t('home.methodology.title')} <span className="text-blue-500">{t('home.methodology.titleHighlight')}</span></>
+                )}
               </h2>
-
               <div className="space-y-6">
-                <h3 className={`${isGeorgian ? 'text-lg md:text-xl' : 'text-2xl md:text-3xl'} text-blue-400 font-bold leading-tight`}>{t('home.ecosystem.subtitle')}</h3>
-                <p className={`${isGeorgian ? 'text-base md:text-lg' : 'text-lg md:text-xl'} text-slate-400 leading-relaxed font-medium`}>
-                  {t('home.ecosystem.desc')}
+                <p className="text-xl text-slate-400 font-medium">
+                  {t('home.methodology.subtitle')}
+                </p>
+                <p className="text-lg text-slate-500 leading-relaxed">
+                  {t('home.methodology.description')}
                 </p>
               </div>
             </motion.div>
-
           </div>
         </section>
 
-        <TemplateShowcase />
-      </main >
-      <Footer />
+        <TemplateShowcase onNavigate={onNavigate} />
+        <Footer />
+      </main>
     </>
   );
 };
