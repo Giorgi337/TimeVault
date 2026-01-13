@@ -44,16 +44,19 @@ const translations: Record<Language, Translations> = {
       exploreBtn: 'Explore',
       content: {
         web: {
-          title: "High-Performance Digital Flagships",
-          description: "Websites that sell, not just sit. We build lightning-fast, SEO-optimized digital experiences designed to convert visitors into buyers instantly."
+          title: "High-Tech Web Architecture",
+          description: "Google-optimized SEO, dynamic visuals, and easily updatable infrastructure for your business's digital growth.",
+          exploreLabel: "More about Web Architecture"
         },
         auto: {
-          title: "The Invisible Workflow",
-          description: "If you are repeating a task, you are wasting money. We implement custom automations that handle the boring, repetitive work in the background."
+          title: "Business Process Automation",
+          description: "Full automation of CRM systems, documentation, and digital infrastructure, freeing up your time for what matters most.",
+          exploreLabel: "More about Business Automation"
         },
         content: {
-          title: "Infinite Creativity, Zero Burnout",
-          description: "Maintain a dominant presence. We generate high-quality blogs, social posts, and ad copy at scale."
+          title: "AI Marketing Autopilot",
+          description: "Automated posts, photorealistic visuals, and content strategies tailored to modern trends.",
+          exploreLabel: "More about AI Marketing"
         }
       }
     },
@@ -112,59 +115,59 @@ const translations: Record<Language, Translations> = {
       services: {
         web: {
           title: "Web Architecture",
-          subtitle: "High-Performance Digital Flagships",
+          subtitle: "SEO Optimized Websites",
           description: [
-            "In the digital age, your website is your headquarters. Most businesses settle for templates that are slow, insecure, and indistinguishable from their competitors. We don't build websites; we build revenue engines.",
-            "Our architecture is headless, meaning the frontend is decoupled from the backend. This results in millisecond load times, bank-grade security, and an experience that feels like a native application rather than a static page."
+            "In the era of Artificial Intelligence, web technologies have no limits. With AI capabilities, we can create any design and functionality a person can imagine. Whether it's complex animation or a unique system, our technology makes it a reality.",
+            "SEO (Search Engine Optimization) is what makes your business visible on the internet. When a user searches for your service, your site should appear first. We ensure your digital product is technically sound and understandable for search engines, directly impacting your revenue."
           ],
           benefits: [
-            "Sub-100ms Load Times",
-            "Headless CMS Integration (Sanity, Contentful)",
-            "Interactive 3D Elements (Three.js, R3F)",
-            "Automated SEO Technical Infrastructure"
+            "Dynamic SEO",
+            "Premium Brand Visuals",
+            "Full Content Control",
+            "Maximum Speed & Security"
           ],
           features: [
-            { title: "Global CDN", desc: "Your site lives on the edge, deployed to 35+ regions simultaneously." },
-            { title: "Conversion Engineering", desc: "Layouts designed by behavioral psychologists to maximize click-through rates." },
-            { title: "Dynamic Personalization", desc: "Content that adapts based on the user's location, source, and behavior." }
+            { title: "Google Optimized SEO", desc: "Technical optimization ensuring top positions in Google search results." },
+            { title: "Dynamic Visuals", desc: "Interactive elements that increase brand value in the eyes of the user." },
+            { title: "Easily Updatable Infrastructure", desc: "A website whose visuals can be updated by any client." }
           ]
         },
         content: {
           title: "AI Marketing",
           subtitle: "Infinite Creativity, Zero Burnout",
           description: [
-            "Content is king, but consistency is the kingdom. The biggest challenge for modern brands is maintaining a high volume of quality content across all channels. Humans get tired; our AI engines do not.",
-            "We build custom Large Language Models (LLMs) trained specifically on your brand's voice, past successes, and industry terminology. This ensures every piece of content—from tweets to whitepapers—sounds exactly like you, but produced at 100x the speed."
+            "Content is a crucial factor for maintaining brand relevance, but as we know, creating it requires immense time and energy. Our models take the best details from successful international marketing campaigns and use this knowledge to create your content. Additionally, our technology ensures the generation of high-quality visuals, eliminating the need for expensive photoshoots.",
+            "We create individual systems that combine global experience with your brand's unique voice. This ensures every piece of content is world-class and fully compliant with modern standards, yet created 100x faster."
           ],
           benefits: [
-            "24/7 Content Production",
-            "Brand Voice Consistency Checkers",
-            "Multi-Channel Distribution Automation",
-            "Trend-Jacking Algorithms"
+            "Savings on Time, Money & Energy",
+            "Continuous Social Activity",
+            "Quick Trend Adoption",
+            "World-Class Brand Consistency"
           ],
           features: [
-            { title: "Blog Autopilot", desc: "SEO-rich articles generated, formatted, and posted automatically." },
-            { title: "Social Swarm", desc: "One core idea turned into 50+ unique posts for LinkedIn, X, and Instagram." },
-            { title: "Visual Synthesis", desc: "AI image generation for thumbnails and ad creatives that stop the scroll." }
+            { title: "Posts & Blogs Autopilot", desc: "Automatic preparation and publishing of text materials for social networks and websites." },
+            { title: "High-Quality Product Visuals", desc: "Creating photorealistic visuals from home that are indistinguishable from reality." },
+            { title: "Constant Ideas for Trend-Driven Content", desc: "Global trend analysis and constant delivery of new ideas tailored to your brand." }
           ]
         },
         auto: {
           title: "Business Automation",
           subtitle: "The Invisible Workflow",
           description: [
-            "If you are clicking the same button more than once a day, you are losing money. Operational inefficiency is the silent killer of profitability. We build 'invisible' software layers that connect your apps and handle the grunt work.",
-            "From client onboarding to invoice reconciliation, our systems listen for triggers and execute complex workflows without human intervention. This frees your team to focus on high-leverage creative and strategic work."
+            "If you perform an action several times a year or more often, chances are its automation is possible through AI. Establishing contact with customers, creating documents and extracting information, company internal information exchange, and digital infrastructure cleanup...",
+            "In these and many other matters, Artificial Intelligence can save you hours daily to use on much more important things. Our systems take full responsibility for these routine processes, allowing you to focus on much more important, strategic goals and increase business efficiency."
           ],
           benefits: [
-            "Eliminate Manual Data Entry",
-            "Zero-Error Rate in Routine Tasks",
-            "Instant Customer Response Times",
-            "Scalable Without Hiring"
+            "Save Hours of Daily Work",
+            "CRM Automation",
+            "Documentation Automation",
+            "Error-Proof Systems"
           ],
           features: [
-            { title: "CRM Sync", desc: "Keep HubSpot, Salesforce, and your Email tools in perfect harmony." },
-            { title: "Auto-Invoicing", desc: "Trigger invoices and follow-ups based on project milestones." },
-            { title: "Smart Notifications", desc: "Get alerted only when human judgment is actually required." }
+            { title: "CRM Automation", desc: "Full automation of customer data management and sales processes to increase efficiency." },
+            { title: "Document Creation & Info Extraction", desc: "Documentation generation and automatic processing of required text data from files." },
+            { title: "Digital Infrastructure Automation", desc: "Creating a unified, automated ecosystem of company internal systems and tools." }
           ]
         }
       }
@@ -207,16 +210,19 @@ const translations: Record<Language, Translations> = {
       exploreBtn: 'აღმოაჩინე',
       content: {
         web: {
-          title: "მაღალი წარმადობის ციფრული ფლაგმანები",
-          description: "ვებ-გვერდები, რომლებიც ყიდიან და არ არიან უბრალო სავიზიტო ბარათები. ჩვენ ვქმნით სწრაფ, SEO-ოპტიმიზირებულ ციფრულ გამოცდილებას, რომელიც ვიზიტორებს მყისიერად აქცევს მყიდველებად."
+          title: "მაღალტექნოლოგიური ვებ-არქიტექტურა",
+          description: "Google-ის საძიებო სისტემაზე მორგებული SEO, დინამიური ვიზუალები და მარტივად განახლებადი ინფრასტრუქტურა თქვენი ბიზნესის ციფრული ზრდისთვის.",
+          exploreLabel: "მეტი ვებ-არქიტექტურის შესახებ"
         },
         auto: {
-          title: "უხილავი სამუშაო პროცესი",
-          description: "თუ თქვენ ერთსა და იმავე დავალებას იმეორებთ, თქვენ კარგავთ ფულს. ჩვენ ვნერგავთ ავტომატიზაციას, რომელიც მოსაწყენ, განმეორებად სამუშაოს ფონურ რეჟიმში ასრულებს."
+          title: "ბიზნეს პროცესების ავტომატიზაცია",
+          description: "CRM სისტემების, დოკუმენტაციის მომზადებისა და ციფრული ინფრასტრუქტურის სრული ავტომატიზაცია, რაც გიონთავისუფლებთ დროს მნიშვნელოვანი საქმეებისთვის.",
+          exploreLabel: "მეტი ბიზნეს-ავტომატიზაციის შესახებ"
         },
         content: {
-          title: "უსაზღვრო კრეატიულობა, გადაწვის გარეშე",
-          description: "შეინარჩუნეთ დომინანტური პოზიცია. ჩვენ მასშტაბურად ვქმნით მაღალი ხარისხის ბლოგებს, პოსტებს სოციალური ქსელებისთვის და სარეკლამო ტექსტებს."
+          title: "AI მარკეტინგული ავტოპილოტი",
+          description: "ავტომატიზირებული პოსტები, ფოტორეალისტური ვიზუალები და თანამედროვე ტრენდებზე მორგებული კონტენტ-სტრატეგია.",
+          exploreLabel: "მეტი AI-მარკეტინგის შესახებ"
         }
       }
     },
@@ -229,7 +235,7 @@ const translations: Record<Language, Translations> = {
         title: "ინოვაცია",
         titleHighlight: "რისკის გარეშე",
         subtitle: "დაზოგეთ დრო უსაფრთხო სივრცეში.",
-        description: "ტექნოლოგიები სწრაფად ვითარდება. ბიზნესები, რომლებიც ამ ინსტრუმენტებს უგულებელყოფენ, მოძველდებიან. TimeVault არის თქვენი უსაფრთხო ხიდი მომავლისკენ — ჩვენ გთავაზობთ მართვადი სერვისის უსაფრთხოებას თანამედროვე AI-ის ასაფეთქებელ ძალასთან ერთად."
+        description: "მოძველებული მეთოდებით მუშაობა არაეფექტური და ძვირია. TimeVault-ი ამ პროცესებს სრულიად ცვლის. ჩვენი ტექნოლოგიებით დავალებები ბევრად სწრაფად სრულდება, რაც საშუალებას გვაძლევს, ვიყოთ უფრო ეფექტურები და ჩვენი სერვისი თქვენთვის უფრო ხელმისაწვდომი გავხადოთ. ნაკლები დრო ოპერაციებზე ნიშნავს მეტ დანაზოგს თქვენი ბიზნესისთვის."
       }
     },
     showcase: {
@@ -259,7 +265,7 @@ const translations: Record<Language, Translations> = {
       }
     },
     footer: {
-      brandDesc: "ბრენდების გაძლიერება დროის მართვისა და სიმდიდრის დაგროვების მიზნით, ინტელექტუალური AI ავტომატიზაციისა და მაღალი დონის დიზაინის მეშვეობით.",
+      brandDesc: "ბრენდების გაძლიერება მარკეტინგული აქტივების შექმნითა და შიდა პროცესების ავტომატიზაციის საშუალებით, დროისა და თანხის დაზოგვის თანხლებით.",
       strategyTitle: "უნიკალური სტრატეგია",
       strategyHighlight: "შექმნილია შედეგისთვის",
       strategyDesc: "გასცდით სტანდარტულ ინდუსტრიულ პრაქტიკას. ჩვენ ვქმნით ინდივიდუალურ სისტემებს, რომლებიც შეფერხებებს კონკურენტულ უპირატესობად აქცევს.",
@@ -275,59 +281,59 @@ const translations: Record<Language, Translations> = {
       services: {
         web: {
           title: "ვებ არქიტექტურა",
-          subtitle: "მაღალი წარმადობის ციფრული ფლაგმანები",
+          subtitle: "SEO ოფტიმიზირებული ვებსაიტები",
           description: [
-            "ციფრულ ეპოქაში თქვენი ვებ-გვერდი თქვენი მთავარი ოფისია. ბიზნესების უმეტესობა კმაყოფილდება შაბლონებით, რომლებიც არის ნელი, დაუცველი და არ განსხვავდება კონკურენტებისგან. ჩვენ არ ვაშენებთ ვებ-გვერდებს; ჩვენ ვაშენებთ შემოსავლის ძრავებს.",
-            "ჩვენი არქიტექტურა არის \"Headless\", რაც ნიშნავს, რომ ვიზუალური მხარე გამოყოფილია სერვერისგან. შედეგად ვიღებთ მილიწამიანი ჩატვირთვის დროს, საბანკო დონის უსაფრთხოებას და გამოცდილებას, რომელიც ჰგავს აპლიკაციას და არა სტატიკურ გვერდს."
+            "ხელოვნური ინტელექტის ეპოქაში ვებ-ტექნოლოგიებს საზღვრები არ აქვს. AI-ს შესაძლებლობებით ჩვენ შეგვიძლია შევქმნათ ნებისმიერი დიზაინი და ფუნქციონალი, რომელსაც ადამიანი წარმოიდგენს. იქნება ეს რთული ანიმაცია თუ უნიკალური სისტემა, ჩვენი ტექნოლოგია მას რეალობად აქცევს.",
+            "SEO (საძიებო სისტემების ოპტიმიზაცია) არის ის, რაც თქვენს ბიზნესს ინტერნეტში ხილვადს ხდის. როდესაც მომხმარებელი ეძებს თქვენს სერვისს, თქვენი საიტი პირველი უნდა გამოჩნდეს. ჩვენ უზრუნველვყოფთ, რომ თქვენი ციფრული პროდუქტი იყოს ტექნიკურად გამართული და გასაგები საძიებო სისტემებისთვის, რაც პირდაპირ აისახება თქვენს შემოსავალზე."
           ],
           benefits: [
-            "100მწ-ზე ნაკლები ჩატვირთვის დრო",
-            "Headless CMS ინტეგრაცია (Sanity, Contentful)",
-            "ინტერაქტიული 3D ელემენტები (Three.js, R3F)",
-            "ავტომატიზირებული SEO ინფრასტრუქტურა"
+            "დინამიური SEO",
+            "ბრენდის პრემიუმ ვიზუალი",
+            "სრული კონტროლი კონტენტზე",
+            "მაქსიმალური სისწრაფე და დაცულობა"
           ],
           features: [
-            { title: "გლობალური CDN", desc: "თქვენი საიტი განთავსებულია 35+ რეგიონში ერთდროულად." },
-            { title: "კონვერსიის ინჟინერია", desc: "ქცევითი ფსიქოლოგების მიერ შექმნილი განლაგება დაწკაპუნების მაქსიმიზაციისთვის." },
-            { title: "დინამიური პერსონალიზაცია", desc: "კონტენტი, რომელიც ადაპტირდება მომხმარებლის ლოკაციის, წყაროსა და ქცევის მიხედვით." }
+            { title: "Google-ის საძიებო სისტემაზე მორგებული SEO", desc: "ტექნიკური ოპტიმიზაცია, რომელიც უზრუნველყოფს ვებსაიტის მოწინავე პოზიციებს Google-ის ძიების შედეგებში." },
+            { title: "დინამიური ვიზუალები", desc: "ინტერაქტიული ელემენტები, რომლებიც ზრდის ბრენდის ღირებულებას მომხმარებლის თვალში." },
+            { title: "მარტივად განახლებადი ინფრასტრუქტურა", desc: "ვებსაიტი, რომლის ვიზუალების განახლებაც ნებისმიერ კლიენტს შეეძლება." }
           ]
         },
         content: {
           title: "AI მარკეტინგი",
           subtitle: "უსაზღვრო კრეატიულობა, გადაწვის გარეშე",
           description: [
-            "კონტენტი მეფეა, მაგრამ სტაბილურობა სამეფოა. თანამედროვე ბრენდების ყველაზე დიდი გამოწვევა მაღალი ხარისხის კონტენტის დიდი მოცულობით წარმოებაა. ადამიანები იღლებიან; ჩვენი AI ძრავები - არა.",
-            "ჩვენ ვქმნით ინდივიდუალურ დიდ ენობრივ მოდელებს (LLMs), რომლებიც გაწვრთნილია კონკრეტულად თქვენი ბრენდის ხმაზე, წარსულ წარმატებებსა და ინდუსტრიის ტერმინოლოგიაზე. ეს უზრუნველყოფს, რომ თითოეული მასალა ჟღერდეს ზუსტად ისე, როგორც თქვენ, ოღონდ 100-ჯერ უფრო სწრაფად."
+            "კონტენტი უმნიშვნელოვანესი ფაქტორია ბრენდის რელევანტურობის შესანარჩუნებლად, თუმცა როგორც მოგვეხსენება, მისი დამზადება უდიდეს დროსა და ენერგიას მოითხოვს. ჩვენი მოდელები იღებენ საუკეთესო დეტალებს წარმატებული საერთაშორისო მარკეტინგული კამპანიებიდან და იყენებენ ამ ცოდნას თქვენი კონტენტის შესაქმნელად. ამასთანავე, ჩვენი ტექნოლოგია უზრუნველყოფს უმაღლესი ხარისხის ვიზუალების გენერირებას, რაც გამორიცხავს ძვირადღირებული ფოტოსესიების საჭიროებას.",
+            "ჩვენ ვქმნით ინდივიდუალურ სისტემებს, რომლებიც აერთიანებს გლობალურ გამოცდილებასა და თქვენი ბრენდის უნიკალურ ხმას. ეს უზრუნველყოფს, რომ თითოეული მასალა იყოს მსოფლიო დონის და სრულ შესაბამისობაში მოდიოდეს თანამედროვე სტანდარტებთან, თუმცა იქმნებოდეს 100-ჯერ უფრო სწრაფად."
           ],
           benefits: [
-            "24/7 კონტენტის წარმოება",
-            "ბრენდის ხმის კონსისტენტურობის შემოწმება",
-            "მრავალარხიანი დისტრიბუციის ავტომატიზაცია",
-            "ტრენდების ალგორითმული ანალიზი"
+            "თანხის, დროისა და ენერგიის დანაზოგი ვიზუალების შექმნაზე",
+            "მუდმივი სოციალური აქტივობა",
+            "ტრენდების სწრაფი ათვისება",
+            "მსოფლიო დონის ბრენდ-კონსისტენტურობა"
           ],
           features: [
-            { title: "ბლოგის ავტოპილოტი", desc: "SEO-ზე მორგებული სტატიების ავტომატური გენერირება, ფორმატირება და გამოქვეყნება." },
-            { title: "Social Swarm", desc: "ერთი იდეის გარდაქმნა 50+ უნიკალურ პოსტად LinkedIn-ისთვის, X-ისა და Instagram-ისთვის." },
-            { title: "ვიზუალური სინთეზი", desc: "AI სურათების გენერაცია რეკლამებისთვის, რომლებიც მომხმარებლის ყურადღებას იპყრობს." }
+            { title: "პოსტებისა და ბლოგების ავტოპილოტი", desc: "სოციალური ქსელებისა და ვებგვერდისთვის ტექსტური მასალის ავტომატური მომზადება და გამოქვეყნება." },
+            { title: "პროდუქტისათვის შექმნილი უმაღლესი ხარისხის ვიზუალები", desc: "ფოტოსებრი ვიზუალების შექმნა სახლიდან გაუსვლელად, რომლებიც რეალობისაგან განურჩეველი იქნება." },
+            { title: "თანამედროვე ტრენდებზე მორგებული კონტენტის მუდმივი იდეები", desc: "გლობალური ტრენდების ანალიზი და თქვენს ბრენდზე მორგებული ახალი იდეების მუდმივი მოწოდება." }
           ]
         },
         auto: {
           title: "ბიზნეს ავტომატიზაცია",
           subtitle: "უხილავი სამუშაო პროცესი",
           description: [
-            "თუ თქვენ ერთ ღილაკს დღეში ერთხელ მაინც აჭერთ, თქვენ ფულს კარგავთ. ოპერაციული არაეფექტურობა მომგებიანობის ჩუმი მკვლელია. ჩვენ ვქმნით \"უხილავ\" პროგრამულ შრეებს, რომლებიც აკავშირებენ თქვენს აპლიკაციებს და ასრულებენ შავ სამუშაოს.",
-            "კლიენტის რეგისტრაციიდან დაწყებული, ინვოისების შედარებით დამთავრებული, ჩვენი სისტემები ასრულებენ რთულ სამუშაოებს ადამიანის ჩარევის გარეშე. ეს ათავისუფლებს თქვენს გუნდს, რათა ფოკუსირდნენ კრეატიულ და სტრატეგიულ სამუშაოზე."
+            "თუ ერთ მოქმედებას წელიწადში რამდენჯერმე, ან უფრო ხშირად ასრულებთ, მაშინ დიდი ალბათობით მისი ავტომატიზაცია AI-ს საშუალებით არის შესაძლებელი. მომხმარებლებთან ურთიერთობის მენეჯმენტი, დოკუმენტების შექმნა და მონაცემების ამოღება, შიდა ინფორმაციის გაცვლა და ციფრული ინფრასტრუქტურის მოწესრიგება...",
+            "ამ და მრავალ სხვა საკითხში ხელოვნურმა ინტელექტმა შესაძლოა ყოველდღიურად საათები დაგიზოგოთ. ჩვენი სისტემები ამ რუტინულ პროცესებს სრულად იღებენ საკუთარ თავზე, რაც საშუალებას მოგცემთ ფოკუსირდეთ ბევრად უფრო მნიშვნელოვან, სტრატეგიულ მიზნებზე და გაზარდოთ ბიზნესის ეფექტურობა."
           ],
           benefits: [
-            "მონაცემთა მექანიკური შეყვანის აღმოფხვრა",
-            "ნულოვანი შეცდომის მაჩვენებელი",
-            "მომხმარებელზე მყისიერი რეაგირება",
-            "მასშტაბირება დაქირავების გარეშე"
+            "საათების დაზოგვა ყოველდღიურად",
+            "CRM ავტომატიზაცია",
+            "დოკუმენტაციის ავტომატიზაცია",
+            "შეცდომებისგან დაცული სისტემა"
           ],
           features: [
-            { title: "CRM სინქრონიზაცია", desc: "HubSpot, Salesforce და თქვენი იმეილის სრულ ჰარმონიაში მუშაობა." },
-            { title: "ავტო-ინვოისინგი", desc: "ინვოისებისა და შეხსენებების გაგზავნა პროექტის ეტაპების მიხედვით." },
-            { title: "ჭკვიანი შეტყობინებები", desc: "მიიღეთ შეტყობინება მხოლოდ მაშინ, როცა ადამიანური განსჯა ნამდვილად საჭიროა." }
+            { title: "CRM ავტომატიზაცია", desc: "მომხმარებელთა მონაცემების მართვისა და გაყიდვების პროცესების სრული ავტომატიზაცია ეფექტურობის გასაზრდელად." },
+            { title: "დოკუმენტების შექმნა და ინფორმაციის ამოღება", desc: "დოკუმენტაციის გენერირება და ფაილებიდან საჭირო ტექსტური მონაცემების ავტომატური დამუშავება." },
+            { title: "ციფრული ინფრასტრუქტურის ავტომატიზაცია", desc: "კომპანიის შიდა სისტემებისა და ხელსაწყოების ერთიანი, ავტომატიზირებული ეკოსისტემის შექმნა." }
           ]
         }
       }

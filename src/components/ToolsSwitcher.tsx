@@ -84,7 +84,7 @@ export const ToolsSwitcher: React.FC<ToolsSwitcherProps> = ({ onNavigate }) => {
                     onClick={() => onNavigate && onNavigate('service', activeTab)}
                     className="px-6 py-3 bg-slate-900 text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300 flex items-center gap-2 group text-base shadow-xl hover:shadow-blue-900/20 hover:-translate-y-1"
                   >
-                    {t('tools.exploreBtn')} {categories.find(c => c.id === activeTab)?.label}
+                    {t(`tools.content.${activeTab}.exploreLabel`)}
                     <motion.div
                       animate={{ x: [0, 4, 0] }}
                       transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}

@@ -106,8 +106,8 @@ export const ServicePage: React.FC<ServicePageProps> = ({ serviceId, onNavigate 
                             <h3 className="text-2xl font-bold mb-6">{t('servicePage.whyChoose')}</h3>
                             <ul className="space-y-4 mb-8">
                                 {data.benefits && Array.isArray(data.benefits) && data.benefits.map((benefit: string, i: number) => (
-                                    <li key={i} className="flex items-center gap-3 text-slate-300">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.5)]"></div>
+                                    <li key={i} className="flex items-start gap-3 text-slate-300">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.5)] shrink-0 mt-2.5"></div>
                                         {benefit}
                                     </li>
                                 ))}
