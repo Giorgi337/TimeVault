@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './Logo';
-import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export const Footer: React.FC = () => {
@@ -16,15 +16,22 @@ export const Footer: React.FC = () => {
             {t('footer.brandDesc')}
           </p>
         </div>
-        
+
         {/* Social Icons */}
         <div className="flex gap-4">
-            <SocialIcon icon={<Instagram size={20} />} />
-            <SocialIcon icon={<Facebook size={20} />} />
-            <SocialIcon icon={<Linkedin size={20} />} />
+          <SocialIcon
+            href="https://www.instagram.com/timevault_ai_integrations/"
+            icon={<Instagram size={20} />}
+            label="Instagram"
+          />
+          <SocialIcon
+            href="https://www.facebook.com/profile.php?id=61587000094076"
+            icon={<Facebook size={20} />}
+            label="Facebook"
+          />
         </div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-slate-600">
         <p>{t('nav.copyright')}</p>
         <div className="flex gap-8">
@@ -36,8 +43,18 @@ export const Footer: React.FC = () => {
   );
 };
 
-const SocialIcon: React.FC<{ icon: React.ReactNode }> = ({ icon }) => (
-  <a href="#" className="w-10 h-10 rounded-full border border-slate-800 flex items-center justify-center hover:bg-slate-800 hover:text-white transition-all">
+const SocialIcon: React.FC<{
+  icon: React.ReactNode;
+  href: string;
+  label: string;
+}> = ({ icon, href, label }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={label}
+    className="w-10 h-10 rounded-full border border-slate-800 flex items-center justify-center hover:bg-slate-800 hover:text-white transition-all"
+  >
     {icon}
   </a>
 );
