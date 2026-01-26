@@ -124,7 +124,7 @@ export const Hero: React.FC = () => {
           label={t('hero.stats.saveHours')}
           delay={0}
           // Tablet Landscape: Adjusted to be closer to center (18% top, 10% left) from corner
-          className={`top-[25%] left-[10%] md:top-[12%] md:left-[2%] md:landscape:top-[18%] md:landscape:left-[6%] ${isGeorgian ? 'lg:top-[12%] lg:left-[14%]' : 'lg:top-[15%] lg:left-[22%]'}`}
+          className={`top-[25%] left-[10%] md:top-[12%] md:left-[2%] md:landscape:top-[18%] md:landscape:left-[6%] ${isGeorgian ? 'lg:top-[12%] lg:left-[14%]' : 'lg:top-[15%] lg:left-[25%]'}`}
           progress={scrollYProgress}
           speed={-250}
           glowColor="rgba(234, 179, 8, 0.15)"
@@ -154,7 +154,7 @@ export const Hero: React.FC = () => {
           label={t('hero.stats.pullAway')}
           delay={0}
           // Tablet Landscape: Adjusted to be closer to center (20% bottom, 10% right) from corner
-          className={`bottom-[25%] right-[15%] md:bottom-[25%] md:right-[4%] md:landscape:bottom-[25%] md:landscape:right-[10%] lg:bottom-[25%] lg:right-[18%]`}
+          className={`bottom-[25%] right-[15%] md:bottom-[25%] md:right-[4%] md:landscape:bottom-[25%] md:landscape:right-[10%] lg:bottom-[28%] lg:right-[18%]`}
           progress={scrollYProgress}
           speed={-180}
           glowColor="rgba(234, 179, 8, 0.15)"
