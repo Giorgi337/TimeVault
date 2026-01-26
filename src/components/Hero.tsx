@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
-          className={`text-base md:text-lg max-w-2xl text-slate-300 mb-8 md:mb-10 mx-auto font-medium drop-shadow-lg`}
+          className={`${isGeorgian ? 'text-sm md:text-base' : 'text-base md:text-lg'} max-w-2xl text-slate-300 mb-8 md:mb-10 mx-auto font-medium drop-shadow-lg`}
         >
           {t('hero.description')}
         </motion.p>

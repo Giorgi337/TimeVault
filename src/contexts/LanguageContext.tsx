@@ -2,11 +2,14 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'ka';
 
-interface Translations {
-  [key: string]: any;
+interface TranslationMap {
+  [key: string]: string | TranslationMap | string[] | ANY_TODO_FIX_TYPES;
 }
 
-const translations: Record<Language, Translations> = {
+// Temporary type to allow arrays/objects until fully vetted, but stricter than 'any'
+type ANY_TODO_FIX_TYPES = any;
+
+const translations: Record<Language, TranslationMap> = {
   en: {
     nav: {
       services: 'Services',

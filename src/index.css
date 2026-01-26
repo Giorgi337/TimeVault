@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-slate-950 text-slate-50 overflow-x-hidden;
+    }
+
+    /* Georgian Font Class */
+    body.font-georgian {
+        font-family: theme('fontFamily.georgian');
+    }
+
+    /* Selection Style */
+    ::selection {
+        @apply bg-yellow-500 text-slate-950;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-slate-950;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-slate-800 rounded-full;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-slate-700;
+    }
+}
