@@ -24,7 +24,7 @@ const translations: Record<Language, TranslationMap> = {
     },
     hero: {
       bgText: 'TIMEVAULT',
-      titleLine1: 'The Time Of Changes Is Here',
+      titleLine1: 'Time of changes is here',
       titleLine2: 'Be on the right side of history',
       description: 'We are living through the biggest shift since the internet. TimeVault leverages the power of artificial intelligence to build websites, generate content, and automate your entire workflow.',
       cta: 'Explore Solutions',

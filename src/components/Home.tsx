@@ -94,7 +94,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               style={{ perspective: 1200 }}
             >
               <TiltCard>
-                <div className="bg-gradient-to-br from-blue-600 to-indigo-900 p-1 rounded-[40px] shadow-[0_0_100px_rgba(37,99,235,0.2)] [transform-style:preserve-3d]">
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-900 p-1 rounded-[40px] shadow-[0_0_100px_rgba(37,99,235,0.2)] [transform-style:preserve-3d] scale-90">
                   <div className="bg-slate-950 rounded-[39px] overflow-hidden aspect-square flex items-center justify-center relative [transform-style:preserve-3d]">
                     <div className="absolute inset-0 bg-slate-950"></div>
                     <img
