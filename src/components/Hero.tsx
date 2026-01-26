@@ -124,7 +124,7 @@ export const Hero: React.FC = () => {
           label={t('hero.stats.saveHours')}
           delay={0}
           // Tablet Landscape: Adjusted to be closer to center (18% top, 10% left) from corner
-          className={`top-[25%] left-[10%] md:top-[12%] md:left-[2%] md:landscape:top-[18%] md:landscape:left-[6%] lg:top-[15%] ${isGeorgian ? 'lg:left-[14%]' : 'lg:left-[18%]'}`}
+          className={`top-[25%] left-[10%] md:top-[12%] md:left-[2%] md:landscape:top-[18%] md:landscape:left-[6%] ${isGeorgian ? 'lg:top-[12%] lg:left-[14%]' : 'lg:top-[15%] lg:left-[18%]'}`}
           progress={scrollYProgress}
           speed={-250}
           glowColor="rgba(234, 179, 8, 0.15)"

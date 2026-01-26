@@ -24,7 +24,7 @@ const translations: Record<Language, TranslationMap> = {
     },
     hero: {
       bgText: 'TIMEVAULT',
-      titleLine1: 'The Gap Is Widening',
+      titleLine1: 'The Time Of Changes Is Here',
       titleLine2: 'Be on the right side of history',
       description: 'We are living through the biggest shift since the internet. TimeVault leverages the power of artificial intelligence to build websites, generate content, and automate your entire workflow.',
       cta: 'Explore Solutions',
@@ -353,7 +353,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('ka');
 
   // Helper function to access nested properties by string "nav.services"
   const t = (path: string) => {
