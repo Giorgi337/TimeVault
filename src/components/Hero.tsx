@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           // Increased font sizes as requested: text-5xl/7xl/8xl (was 4xl/6xl/7xl)
-          className={`${isGeorgian ? 'text-3xl md:text-5xl lg:text-6xl' : 'text-5xl md:text-7xl lg:text-8xl'} leading-tight ${isGeorgian ? 'tracking-normal' : 'tracking-tighter'} font-black mb-6 md:mb-8 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]`}
+          className={`${isGeorgian ? 'text-lg md:text-3xl lg:text-4xl' : 'text-3xl md:text-4xl lg:text-5xl'} leading-tight ${isGeorgian ? 'tracking-normal' : 'tracking-tighter'} font-black mb-6 md:mb-8 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]`}
         >
           {t('hero.titleLine1')} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-yellow-400 to-blue-500 pb-2 pr-2 inline-block">
