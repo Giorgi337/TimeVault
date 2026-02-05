@@ -1,0 +1,17 @@
+# CloudCannon Configuration
+# https://cloudcannon.com/documentation/articles/what-is-the-cloudcannon-configuration-file/
+
+# The command to build your site
+build: "npm run build"
+
+# The directory where the built site is output
+# Vite defaults to "dist"
+output: "dist"
+
+# The source directory of your project
+source: "."
+
+# specific collections configurations can be added here
+# collections_config:
+#   posts:
+#     path: content/posts

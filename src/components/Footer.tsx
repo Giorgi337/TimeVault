@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
         <p>{t('nav.copyright')}</p>
         <div className="flex gap-8">
           <a href="#" className="hover:text-white transition-colors">{t('nav.contactLink')}</a>
-          <a href="#" className="hover:text-white transition-colors">{t('nav.privacyLink')}</a>
+          <a href="mailto:TimeVault.Service@gmail.com" className="hover:text-white transition-colors">gmail: TimeVault.Service@gmail.com</a>
         </div>
       </div>
     </footer>
