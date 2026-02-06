@@ -48,7 +48,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                             {/* Iframe Content */}
                             <div className="flex-1 w-full h-full min-h-[600px] overflow-hidden bg-white">
                                 <iframe
-                                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1DPbZyN6cJ4gKb0DMumHCZ0CybKQMMS7bVXdRBFA-3oi38FocVpsr1914USGI_02fTtG-ZH6-F?gv=true"
+                                    src="https://calendar.app.google/T9h3vGx4YhEDtDyr6?gv=true"
                                     style={{ border: 0 }}
                                     width="100%"
                                     height="100%"
